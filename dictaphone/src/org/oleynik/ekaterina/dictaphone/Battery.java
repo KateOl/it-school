@@ -2,7 +2,7 @@ package org.oleynik.ekaterina.dictaphone;
 
 public class Battery {
 	private int charge = 0;
-	private final int MAXCHARGE = 100;
+	private final int MAXCHARGE = 120;
 	private boolean isCharging = false;
 	public int checkCharge(){
 		return charge;
@@ -33,7 +33,7 @@ public class Battery {
 		Battery myBattery = new Battery();
 		System.out.println("Battery charge is " + myBattery.checkCharge());
 		myBattery.onCharging();
-		for (int i=0; i<10; i++) {
+		for (int i=0; i<15; i++) {
 			myBattery.doCharge();
 		}
 		myBattery.offCharging();
