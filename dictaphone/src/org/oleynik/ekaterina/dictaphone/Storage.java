@@ -1,7 +1,7 @@
 package org.oleynik.ekaterina.dictaphone;
 
 public class Storage {
-	private final long MAXSTORAGE = 100000;
+	private final long MAXSTORAGE = 105000;
 	private long storage = MAXSTORAGE;
 	public boolean isStorageFool(){
 		boolean isFool = true;
@@ -12,9 +12,9 @@ public class Storage {
 		return space;
 	};
 	public void addRecording(){
-		if ((storage - 100)<0) 
+		if ((storage - 50)<0) 
 			return;
-		storage -= 100;
+		storage -= 50;
 	}
 	public void emptyStorage(){
 		storage = MAXSTORAGE;
