@@ -1,27 +1,23 @@
 package org.oleynik.ekaterina.dictaphone;
 
 public class Storage {
-	private final long MAXSTORAGE = 100000;
-	private long storage = MAXSTORAGE;
-	public boolean isStorageFool(){
+	long storage;
+	boolean isStorageFool(){
 		boolean isFool = true;
 		return isFool;
 	}
-	public long getEmptySpace(){
-		long space = MAXSTORAGE - storage;
+	long getEmptySpace(){
+		long space = 0;
 		return space;
 	};
-	public void addRecording(){
-		if ((storage - 100)<0) 
-			return;
-		storage -= 100;
+	void addRecording(){
+		return;
 	}
-	public void emptyStorage(){
-		storage = MAXSTORAGE;
+	void emptyStorage(){
+		
 	}
-	public void saveStorage2Computer(){
-		System.out.println("Recordings was saved");
-		emptyStorage();
+	void saveStorage2Computer(){
+		
 	}
 
 }

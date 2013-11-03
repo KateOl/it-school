@@ -1,24 +1,10 @@
 package org.oleynik.ekaterina.dictaphone;
 
 public class Controll {
-	void showScreen(){
+	void showStorage(){
+		return;
 	};
-	void powerOn(){
-		
-	}
-	void powerOff(){
-		
-	}
-	void startRecording(){
-		
-	}
-	void stopRecording(){
-		
-	}
-	void startCharging(){
-		
-	}
-	void stopCharging(){
-		
-	}
+	void showCharge(){
+		return;
+	};
 }
